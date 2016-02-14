@@ -1,14 +1,13 @@
-
-#include"singleton.h"
+#include "singleton.h"
 
 int main()
 {
 
-     Singleton *s;
-     s = Singleton::getSingleton();
-     s->insert(5,"sarthak");
-     s->insert(8,"schokshi");
-     s->printmap();
+     Singleton *s1;
+     s1 = Singleton::getSingleton();
+     s1->insert(5,"sarthak");
+     s1->insert(8,"schokshi");
+     s1->printmap();
 
      return 0;
 
