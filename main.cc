@@ -1,14 +1,14 @@
 
-#include"AtdWrapper.h"
+#include"singleton.h"
 
 int main()
 {
 
-     AtdWrapper *atd1;
-     atd1 = AtdWrapper::getAtdWrapper();
-     atd1->insert(5,"sarthak");
-     atd1->insert(8,"schokshi");
-     atd1->printmap();
+     Singleton *s;
+     s = Singleton::getSingleton();
+     s->insert(5,"sarthak");
+     s->insert(8,"schokshi");
+     s->printmap();
 
      return 0;
 
